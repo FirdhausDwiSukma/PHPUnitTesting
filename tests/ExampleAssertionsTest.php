@@ -18,4 +18,8 @@ class ExampleAssertionsTest extends TestCase
         $this->assertEquals(10, 5 + 5);
     }
 
+    public function testThatNumberSubtraction(){
+        $this->assertEquals(20, 50 - 30);
+    }
+
 }
