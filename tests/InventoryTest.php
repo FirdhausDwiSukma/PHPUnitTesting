@@ -3,6 +3,7 @@
 use PHPUnit\Framework\TestCase;
 
 class InventoryTest extends TestCase{
+    /** @group db */
     public function testProductsCanBeSet(){
         //setup
         $mockRepo = $this->createMock(\App\ProductRepository::class);
@@ -15,7 +16,7 @@ class InventoryTest extends TestCase{
             ['id' => 2, 'name' => 'Apple iPhone'],
         ];
 
-        $mockRepo->method('fetchProducts')->willReturn($mockProductsArray);
+        $mockRepo->expects($this->exactly(1))->method('fetchProducts')->willReturn($mockProductsArray);
 
         $inventory->setProducts();
 
