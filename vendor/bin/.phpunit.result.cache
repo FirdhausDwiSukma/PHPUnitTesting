@@ -1,0 +1,1 @@
+{"version":1,"defects":{"ExampleAssertionsTest::testThatStringMatch":7},"times":{"ExampleAssertionsTest::testThatStringMatch":0.004,"ExampleAssertionsTest::testThatNumbersAddUp":0.001,"CartTest::testCorrectNetPriceIsReturned":0.005}}
