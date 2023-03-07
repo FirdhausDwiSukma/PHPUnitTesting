@@ -1,5 +1,6 @@
 <?php declare(strict_types=1);
 
+use App\Email;
 use PHPUnit\Framework\TestCase;
 
 class EmailTest extends TestCase
@@ -8,7 +9,7 @@ class EmailTest extends TestCase
     {
         $string = 'user@example.com';
 
-        $email = \App\Email::fromString($string);
+        $email = Email::fromString($string);
 
         $this->assertSame($string, $email->asString());
     }
@@ -18,6 +19,6 @@ class EmailTest extends TestCase
     // {
     //     $this->expectException(InvalidArgumentException::class);
 
-    //     \App\Email::fromString('invalid');
+    //     Email::fromString('invalid');
     // }
 }

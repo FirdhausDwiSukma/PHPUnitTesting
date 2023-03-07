@@ -10,7 +10,6 @@ class InventoryTest extends TestCase{
 
         $inventory = new \App\Inventory($mockRepo);
         
-
         $mockProductsArray = [
             ['id' => 1, 'name' => 'Acme Radio Knobs'],
             ['id' => 2, 'name' => 'Apple iPhone'],
